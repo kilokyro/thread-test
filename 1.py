@@ -9,7 +9,7 @@ def sleep5(threadcount):
     for j in range(int(threadcount)):
         threadList.append(j)
         print("in thread, j is " + str(j))
-        time.sleep(0.5)
+        time.sleep(0.1)
 
 maincount=input("Please input 1st (main) No.")
 threadcount=input("Please input 2nd (thread) No.")
@@ -20,7 +20,7 @@ cat.start()
 for i in range(int(maincount)):
     mainList.append(i)
     print("in main, i ="+str(i))
-    time.sleep(0.5)
+    time.sleep(0.15)
 
 cat.join()
 print("Finish all")
